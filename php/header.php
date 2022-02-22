@@ -25,15 +25,15 @@
                  } else {
                      if (@$_SESSION['userType'] == 'E') { 
             ?>
-                        <li class="menuItems"><a href="./php/registrar.php" class="menuLink">Consultar Calificaciones</a></li>
-                        <li class="menuItems"><a href="./php/login.php" class="menuLink">Usuario: Estudiante</a></li>
+                        <li class="menuItems"><a href="#" class="menuLink">Consultar Calificaciones</a></li>
+                        <li class="menuItems"><a href="#" class="menuLink">Usuario: Estudiante</a></li>
                         <li class="menuItems"><a href="./php/panelControl.php?salir=true" class="menuLink">Cerrar sesión</a></li>
             <?php
                      } else {
             ?>
-                        <li class="menuItems"><a href="./php/registrar.php" class="menuLink">Registrar Calificaciones</a></li>
-                        <li class="menuItems"><a href="./php/login.php" class="menuLink">Usuario: Profesor</a></li>
-                        <li class="menuItems"><a href="./php/login.php" class="menuLink">Consultar</a></li>
+                        <li class="menuItems"><a href="#" class="menuLink">Registrar Calificaciones</a></li>
+                        <li class="menuItems"><a href="#" class="menuLink">Usuario: Profesor</a></li>
+                        <li class="menuItems"><a href="#" class="menuLink">Consultar</a></li>
                         <li class="menuItems"><a href="./php/panelControl.php?salir=true" class="menuLink">Cerrar sesión</a></li>
             <?php
                      }

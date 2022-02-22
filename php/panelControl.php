@@ -26,7 +26,7 @@
             session_unset();
             session_destroy();
             header("HTTP/1.1 302 Moved Temporarily");
-            header("Location: /PW2_U2/php/login.php");
+            header("Location: /php/login.php");
 
         } else { 
             if (@$_POST AND isset($_POST['user_name'])) { // --> Si el POST viene de Registrar Usuario
