@@ -13,8 +13,8 @@
     <link rel="stylesheet" href="../css/formulario.css">
     <link rel="stylesheet" href="../css/footer.css">
 
-    <base href="/PW2_U2/">
-    <!-- <base href="https://morning-dawn-52068.herokuapp.com/"> -->
+    <!-- <base href="/PW2_U2/"> -->
+    <base href="https://safe-stream-39211.herokuapp.com/">
 </head>
 <body >  
 

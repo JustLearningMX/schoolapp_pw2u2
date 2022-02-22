@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/formulario.css">
 
-    <base href="/PW2_U2/">
-    <!-- <base href="https://morning-dawn-52068.herokuapp.com/"> -->
+    <!-- <base href="/PW2_U2/"> -->
+    <base href="https://safe-stream-39211.herokuapp.com/">
 </head>
 <body >  
 
@@ -55,7 +55,7 @@
                     if (preg_match_all($patronRgx, $passUser)) {                        
 
                         //Enviamos variables a obtenerDatosBd.php
-                        $local = true; //Modo Local
+                        $local = false; //Modo Local
                         $getUsers = false; //Obtiene todos los usuarios
                         $login = false; //Bandera para indicar que se NO va a loguear sino a registrar
                         $idUser; // Id recibido del formulario registrar
@@ -96,7 +96,7 @@
             //Si no está autenticado y viene de Login
             if (@$_SESSION['autentificado'] != TRUE AND !isset($_POST['user_name'])) {                             
                 //Enviamos variables a obtenerDatosBd.php
-                $local = true; //Modo Local
+                $local = false; //Modo Local
                 $getUsers = false; //Obtiene todos los usuarios
                 $login = true; //Bandera para indicar que se va a loguear
                 $idUser; // Id recibido del formulario del Login

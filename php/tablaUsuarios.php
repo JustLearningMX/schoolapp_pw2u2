@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="../css/tablaUsuarios.css">
     <link rel="stylesheet" href="../css/footer.css">
 
-    <base href="/PW2_U2/">
-    <!-- <base href="https://morning-dawn-52068.herokuapp.com/"> -->
+    <!-- <base href="/PW2_U2/"> -->
+    <base href="https://safe-stream-39211.herokuapp.com/">
 </head>
 
 <body >
@@ -34,7 +34,7 @@
 </body>
 <?php
     //Enviamos variables    
-    $local = true; //Modo Local
+    $local = false; //Modo Local
     $getUsers = true; //Obtiene todos los usuarios
     $login = false; //Bandera para indicar que se NO va a loguear
     $consulta = "SELECT * FROM";

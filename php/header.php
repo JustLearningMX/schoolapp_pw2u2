@@ -1,4 +1,3 @@
-<!-- <script src="./js/controladorCrud.js"></script> -->
 <?php 
     if (session_id() == '') {
         session_start();
@@ -15,8 +14,6 @@
         <!--Menú de navegación-->
         <ul class="menuPrincipal">
             <!--Lista no ordenada para las opciones del menú-->
-            <!--Elementos de la lista (opciones)-->
-            <!-- <li class="menuItems subPrestamo"><a onclick="controladorCrud('Socios')" class="menuLink">Inicio</a></li> -->
             <li class="menuItems"><a href="#" class="menuLink">Inicio</a></li>
 
             <?php

@@ -16,10 +16,10 @@
     
     //si trabajamos con Heroku u otro hosting
   } else {
-    $host= "localhost";
-    $user= "root";
-    $bd= "es1821000366";
-    $pass= "";
+    $host= "us-cdbr-east-05.cleardb.net";
+    $user= "beed73ed0c715b";
+    $bd= "heroku_1c9bbf4429d4520";
+    $pass= "e1981089";
     $tabla = "usuarios";
   };
   
