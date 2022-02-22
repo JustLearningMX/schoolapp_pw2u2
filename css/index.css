@@ -1,0 +1,29 @@
+/* ESTILOS GLOBALES */
+html {
+  /*Configuración para usar las cajas*/
+  box-sizing: border-box;
+}
+
+*,/*Se eliminan configuraciones por defecto del navegador*/
+  *:before,
+  *:after {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: inherit;
+} 
+
+body {
+  /*Estilos del cuerpo principal*/
+  background-color: #f7f7f7; /*Color de fondo*/
+  color: #282c34; /*Color de las fuentes*/
+  display: grid;/*Grilla de filas para el header, main y footer*/
+
+  /*Medidas de cada fila, los acomoda*/
+  grid-template-rows:repeat(auto-fill, minmax(70px, 1fr)) ;
+}
+
+a{/*A los links se le quitan el subrayado*/
+  text-decoration: none;
+  color: #282c34;
+}

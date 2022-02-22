@@ -1,0 +1,99 @@
+/* ESTILOS PARA EL HEADER */
+header {
+  background-color: #20232a;
+  /* background-color: transparent; */
+  display: flex; /*Flexbox para ordenar elementos*/
+  justify-content: space-around; /*Espacio alrededor horizontalmente*/
+  align-items: center; /*Se alinean verticalmente en el centro*/
+
+  /*Fijamos el menú*/
+  position: fixed;   
+  width: 100%;
+  height: 70px;
+  z-index: 7;
+}
+
+.empresaContainer {
+  /*Orden al DIV que contiene el logo y nombre de la empresa*/
+  display: flex;
+}
+
+img {
+  /*Estilo a logotipo*/
+  width: 50px;
+  height: auto;
+}
+
+.nomEmpresa {
+  /*Estilo al nombre de la empresa (h1 y strong)*/
+  color: #be3144;
+  margin-left: 1.5rem;
+  text-align: left;
+  font-size: 2.7rem;
+}
+
+.nomEmpresa strong {
+  /*Estilo al nombre de la empresa (sólo strong)*/
+  color: #61dafb;
+}
+
+nav {
+  /*Estilos a barra de del menú*/
+  width: 40%;
+}
+
+ul {
+  /*Estilos a listado del menú*/
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.menuItems {
+  /*Estilos a cada opción del menú*/
+  margin: 0 0.5rem;
+  font-size: 1.1rem;
+  text-align: center;
+  /* line-height: 70px; */
+  /* font-weight: 300; */
+}
+
+.menuLink:hover {
+  color: #61dafb;
+  transition: 0.5s;
+}
+
+/*MENÚ DESPLEGABLE "PRÉSTAMOS / ASESORES"*/
+
+.menuPrincipal li{
+  position: relative;
+  float: left;
+}
+
+.menuPrincipal li > a{
+  /* font-weight: 500; */
+  color: #ffffff;
+}
+
+.subMenu1{
+  position: absolute;
+  display: none;
+  flex-direction: column;
+}
+
+.subMenu1 li{
+  float: none;
+  width: 110px;
+  background-color: #be3144;
+  padding: 5px;
+}
+
+.menuLink{
+  cursor: pointer;
+}
+
+.subPrestamo:hover > ul,
+.subAsesor:hover > ul,
+.subDivisas:hover > ul{
+  display: flex;
+}

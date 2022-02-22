@@ -1,0 +1,54 @@
+/*ESTILOS PARA EL FORMULARIO*/
+
+/*Estilos generales para la sección*/
+#tableContainer {
+  /* background-color: #f7f7f7; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 80px; */
+  padding: 100px 0;
+  /* flex-wrap: wrap; */
+}
+
+/*Estilos al título del formulario*/
+.tituloForm {
+  margin: 0;
+  margin: 20px 30px;
+  font-size: 2rem;
+  font-weight: 700;
+  padding-top: 3px;
+}
+
+/* Tabla */
+.botonesContainer {
+  width: 70%;
+}
+
+#tableContainer > table, th, td {
+  border: 2px solid #20232a;
+  border-collapse: collapse;
+}
+
+#tableContainer > table{
+  width: 60%;
+}
+
+th{
+  background-color: #31373b;
+  padding: 10px 0;
+  color: #f7f7f7;
+}
+
+td {
+  background-color: #ced4da;
+  padding: 5px;
+  text-align: center;
+  color: #20232a;
+}
+
+.trDatos:hover{
+  opacity: .9;
+}

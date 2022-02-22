@@ -1,0 +1,169 @@
+/*ESTILOS PARA EL FORMULARIO*/
+
+/*Estilos generales para la sección*/
+#contactoContainer {
+  /* background-color: #f7f7f7; */
+  width: 100%;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  margin: 70px 0;
+  flex-wrap: wrap;
+}
+
+.registrarImg,
+.registrarDatos{
+  /* background-color: #0a9640; */
+  width: 400px;
+  height: 450px;
+  margin-top: 30px;
+}
+
+.registrarDatos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background-color: blueviolet; */
+  padding-right: .6rem;
+  border: 1px solid #ced4da;
+}
+
+.formImage{
+  width: 100%;
+  height: 100%;
+  object-fit:cover ;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+
+/*Estilos al título del formulario*/
+.tituloForm {
+  margin: 0;
+  /* margin: 40px 30px 30px 30px; */
+  font-size: 2rem;
+  font-weight: 700;
+  padding-top: 3px;
+}
+
+/* Estilos a la actividad propia del formulario */
+.actividadForm{
+  width: 100%;
+  /* margin-bottom: 20px; */
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+/*Estilos a la caja del formulario*/
+#solicitar-form {
+  /* background-color: #f7f7f7; */
+  display: flex;
+  flex-direction: column;
+  /* margin-bottom: 100px; */
+  width: 100%;
+  padding: 1rem;
+}
+
+/*Estilos para los label*/
+#solicitar-form label {
+  font-family: sans-serif, helvetica;
+  font-size: 17px;
+  line-height: 2;
+}
+
+/*Estilos para los input*/
+.input-form,
+#dropdown {
+  margin: 0 0 7px 0;
+  height: 30px;
+  width: 100%;
+  border-radius: 0.25rem;
+  color: #495057;
+  border: 1px solid #ced4da;
+  padding-left: 8px;
+}
+
+/*Estilos a la sección de comentarios*/
+#commentsForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: flex-start;
+  margin: 20px 0 0 0;
+}
+
+/*Estilos a la caja de comentarios*/
+#solicitar-form textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.625rem;
+  resize: vertical;
+  margin-bottom: 20px;
+}
+
+/*Estilos a la sección del botón*/
+#buttonContainer {
+  /*Centrar el botón de Enviar*/
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+}
+
+/*Estilos propios del botón*/
+.submittButton {
+  width: 50%;
+  color: white;
+  padding: 0.55rem;
+  background: #0a9640;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+/*Estilos a la respuesta del envío del formulario*/
+.answerFromForm{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  height: 100vh;
+}
+
+.answerFromForm div{
+  padding: 250px;
+  text-align: center;
+}
+
+/* Tabla */
+.botonesContainer {
+  width: 70%;
+}
+
+#contactoContainer > table, th, td {
+  border: 2px solid #20232a;
+  border-collapse: collapse;
+}
+
+#contactoContainer > table{
+  width: 70%;
+}
+
+th{
+  background-color: #31373b;
+  padding: 10px 0;
+  color: #f7f7f7;
+}
+
+td {
+  background-color: #ced4da;
+  padding: 5px;
+  text-align: center;
+  color: #20232a;
+}
+
+.trDatos:hover{
+  opacity: .9;
+}

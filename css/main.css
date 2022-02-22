@@ -1,0 +1,46 @@
+/* ESTILOS PARA EL MAIN */
+main {
+  display: flex;
+  flex-direction: column; /* Posicionamiento en columnas */
+  align-items: center; /*Centrado*/
+  margin-top: 70px;
+}
+
+/*Estilos para las secciones del main*/
+#discapacidadInfo{
+  width: 100%;
+  padding: 40px 30px 50px 30px;
+}
+
+.descripcionInfo{
+  color: #ff5901;
+  font-size: 2.5rem;
+  padding: 2rem 10rem;
+}
+
+.parrafoInfo{
+  font-size: 1.8rem;
+  padding: 2rem 10rem;
+}
+
+.span1{
+  color: #22cbfa;
+}
+
+.span2{
+  color: #df2942;
+}
+
+.span3{
+  color: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+  font-weight: 700;
+}
+
+  /* background-color: #000;
+  background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%); */
+
+.discapacidadImg {
+  /*Estilos a imágenes*/
+  width: 100%;
+  border-radius: 12%;
+}
