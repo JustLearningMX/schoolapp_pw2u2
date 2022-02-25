@@ -29,7 +29,7 @@
             <p class="tituloForm">Ingresar:</p>
             <form id="solicitar-form" action="./php/panelControl.php" method="POST">
                 <label id="name-label" for="user_id">Id de usuario:</label>
-                <input name="user_id" type="text" class="input-form" placeholder="Ingresa el Id" required>
+                <input name="user_id" type="text" class="input-form" placeholder="Ingresa el Id" required autofocus>
                 <label id="number-label" for="user_pass">Password:</label>
                 <input name="user_pass" type="password" class="input-form" min="1" max="100"
                     required>            

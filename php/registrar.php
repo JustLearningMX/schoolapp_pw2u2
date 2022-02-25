@@ -29,7 +29,7 @@
             <p class="tituloForm">Registrar usuarios:</p>
             <form id="solicitar-form" action="./php/panelControl.php" method="post">
                 <label id="name-label" for="user_id">Id:</label>
-                <input name="user_id" type="text" class="input-form" placeholder="Ingresa el Id" >
+                <input name="user_id" type="text" class="input-form" placeholder="Ingresa el Id" autofocus>
                 <label id="name-label" for="user_name">Nombre:</label>
                 <input name="user_name" type="text" class="input-form" placeholder="Ingresa nombre completo" >
                 <label id="email-label" for="user_type">Tipo de usuario:</label>
@@ -53,7 +53,7 @@
 
     <?php
         } else {
-            echo "<script type='text/javascript'>";               // Si ya está logueado el usuario,
+            echo "<script type='text/javascript'>";               // Si no está logueado el usuario,
             echo "window.location.href='./php/panelControl.php'"; // lo relocaliza hacia el panelControl.php
             echo "</script>";
         }

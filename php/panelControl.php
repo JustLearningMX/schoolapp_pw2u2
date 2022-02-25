@@ -25,8 +25,9 @@
         if (@$_GET['salir'] == 'true') {
             session_unset();
             session_destroy();
-            header("HTTP/1.1 302 Moved Temporarily");
-            header("Location: /php/login.php");
+            echo "<script type='text/javascript'>";
+            echo "window.location.href='./php/login.php'"; // Relocaliza hacia registrar.php
+            echo "</script>";
 
         } else { 
             if (@$_POST AND isset($_POST['user_name'])) { // --> Si el POST viene de Registrar Usuario

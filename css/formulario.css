@@ -122,6 +122,10 @@
   font-size: 1.2rem;
 }
 
+.btnDisabled{
+  background: lightgrey;
+}
+
 /*Estilos a la respuesta del envío del formulario*/
 .answerFromForm{
   display: flex;
@@ -166,4 +170,29 @@ td {
 
 .trDatos:hover{
   opacity: .9;
+}
+
+/*Estilos para los input de evaluar.php*/
+.input-form2
+{
+  margin: 0 0 7px 0;
+  height: 30px;
+  width: 70%;
+  border-radius: 0.25rem;
+  color: #495057;
+  border: 1px solid #ced4da;
+  padding-left: 8px;
+}
+
+.contenedorMaterias{
+  display: flex;
+  padding-top: 20px;
+}
+
+.divisionMaterias{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 20px;
+  padding-bottom: 10px;
 }

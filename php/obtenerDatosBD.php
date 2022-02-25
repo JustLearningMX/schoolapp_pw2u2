@@ -1,5 +1,6 @@
 <!-- Este script de JS llena una tabla HTML con los datos de la BD -->
-<script type="text/javascript" src="./js/llenarTablaUsers.js"></script>
+  <script type="text/javascript" src="./js/llenarTablaUsers.js"></script>
+  <!-- <script type="text/javascript" src="./js/llenarCalificaciones.js"></script>   -->
 
 <?php
   if (session_id() == '') {
@@ -50,6 +51,9 @@
   //***** UNA TABLA O PARA BUSCAR UN SOLO USUARIO Y GUARDAR SU SESIÓN
 
   if($getUsers){ // Todos los usuarios
+    // echo "<script type='text/javascript'>";
+    // echo "alert(`Entró a Tabla...!`)"; //Debug 
+    // echo "</script>";
     //Consulta
     $statement = $pdo->prepare($consulta . ' ' . $tabla);
     $statement->execute();  
@@ -70,6 +74,7 @@
     echo "</script>";
 
   } elseif($login) { // (LOGIN) un usuario en específico
+    
     //Consulta con sentencias preparadas
     $statement = $pdo->prepare($consulta . ' ' . $tabla . ' WHERE id_usuario = :IdUser and password = :Pass');
     $IdUser = $idUser;
@@ -111,7 +116,8 @@
       echo "window.location.href='./php/panelControl.php'"; // Relocaliza hacia el panelControl.php
       echo "</script>";
     }
-  } else { // (REGISTRAR) un usuario en específico
+  } elseif (!empty($nameUser)){ // (REGISTRAR) un usuario en específico
+    
     //Consulta con sentencias preparadas, buscaremos Si existe el ID
     $statement = $pdo->prepare($consultaSelect . ' ' . $tabla . ' WHERE id_usuario = :IdUser');
     $IdUser = $idUser;
@@ -130,6 +136,7 @@
 
     //Analizamos si no existe Ya ese Id
     if(empty($arreglo)){ // Si no se halló una coincidencia con el ID_USER
+
       //Consulta con sentencias preparadas, Insertaremos el nuevo usuario
       $statement = $pdo->prepare($consultaInsert . ' ' . $tabla . ' (id_usuario, nombre_usuario, tipo_usuario, password) VALUES (:IdUser, :NomUser, :TypeUser, :PassUser)');
       $IdUser = $idUser;
@@ -158,6 +165,44 @@
       echo "</script>";
     }
   };
+
+  if ($getCalificaciones) {
+    $tabla = "calificaciones";    
+
+    //Consulta con sentencias preparadas, buscaremos Si existe el ID
+    $optMenu === "Estudiante" //Si es un estudiante la búsqueda es específica
+    ? $statement = $pdo->prepare($consulta . ' ' . $tabla . ' WHERE matricula_estudiante = :IdUser') : 
+      $statement = $pdo->prepare($consulta . ' ' . $tabla); // Si es profesor traerá todo
+
+    $IdUser = $_SESSION['userId'];
+    $optMenu === "Estudiante" ? $statement->execute(array(':IdUser' => $IdUser)) : $statement->execute();
+
+    //Guarda el resultado como un array
+    while($rows = $statement->fetch()) {		
+      $arreglo [] = array(
+        'matricula' => $rows['matricula_estudiante'],
+        'profesor' => $rows['id_profesor'],
+        'programacion' => $rows['programacion'],
+        'matematicas' => $rows['matematicas'],
+        'algoritmos' => $rows['algoritmos'],
+        'logica' => $rows['logica'],
+        'so' => $rows['so'],
+        'bd' => $rows['bd']
+        );
+    };
+
+    if(empty($arreglo)){ // Si no se encontró información 
+      echo "<script type='text/javascript'>";
+      echo "alert(`No se encontró información en la BD!`)"; //Debug 
+      echo "</script>";
+    } else {
+      $jsonArray = json_encode($arreglo); //Se pasa a formato JSON    
+      echo "<script type='text/javascript'>";  
+      echo "llenarCalificaciones($jsonArray)";//Lo pasamos al script de JS que muestra la info en tablaUsuarios.php
+      echo "</script>";
+    }
+
+  }
 
   $pdo = null; // Cerramos la conexión
 ?>
