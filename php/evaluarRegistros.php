@@ -115,18 +115,10 @@
         $SO = $so;
         $BD = $bd;
 
-        echo "<script type='text/javascript'>";  
-        echo "alert(`$Prog`)"; // Mensaje
-        echo "</script>";
-
-        echo "<script type='text/javascript'>";  
-        echo "alert(`$Mate`)"; // Mensaje
-        echo "</script>";
-
         $statement->execute(array(':Matri' => $Matri, ':IdProf' => $IdProf, ':Prog' => $Prog, ':Mate' => $Mate, ':Algo' => $Algo, ':Logi' => $Logi, ':SO' => $SO, ':BD' => $BD ));
         
         echo "<script type='text/javascript'>";
-        echo "alert(`¡Calificaciones ingresadas exitosamenteeeeee!`)"; //Debug 
+        echo "alert(`¡Calificaciones ingresadas exitosamente!`)"; //Debug 
         echo "</script>";
 
         //Redireccionamos 
