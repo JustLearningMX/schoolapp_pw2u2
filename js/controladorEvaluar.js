@@ -16,7 +16,7 @@ function verificarTexto() {
         const so = document.querySelector(".so");
         const bd = document.querySelector(".bd");
 
-        const botonEnviar = document.querySelector(".submittButton");
+        const botonEnviar = document.querySelector(".btnEvaluar");
 
         // Habilitamos los input de las calificaciones
         prog.toggleAttribute('disabled')

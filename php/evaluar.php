@@ -7,14 +7,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Se importa Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <!--Se importan estilos-->
     <link rel="stylesheet" href="../css/index.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/formulario.css">
     <link rel="stylesheet" href="../css/footer.css">
 
-    <!-- <base href="/PW2_U2/"> -->
-    <base href="https://safe-stream-39211.herokuapp.com/">
+    <base href="/PW2_U2/">
+    <!-- <base href="https://safe-stream-39211.herokuapp.com/"> -->
     <script src="./js/controladorEvaluar.js"></script>
 </head>
 <body >  
@@ -29,32 +33,32 @@
     <section id="contactoContainer">
         <div class="registrarDatos">
             <p class="tituloForm">Evaluar alumnos:</p>
-            <form id="solicitar-form" action="./php/evaluarRegistros.php" method="POST">
+            <form class="form-horizontal" id="solicitar-form" action="./php/evaluarRegistros.php" method="POST">
                 <label id="matricula-label" for="matricula">Matrícula:</label>                
-                    <input name="matricula" onblur="verificarTexto()" type="text" class="input-form matricula" 
+                    <input name="matricula" onblur="verificarTexto()" type="text" class="form-control matricula" 
                     placeholder="Ingresa matrícula del estudiante" autofocus>
                 
                 <section class="contenedorMaterias">
                     <div class="divisionMaterias">
                         <label id="programacion-label" for="programacion">Programación:</label>
-                        <input name="programacion" type="number" class="input-form2 programacion" min="1" max="100" disabled>
+                        <input name="programacion" type="number" class="input-form2 programacion form-control" min="1" max="100" disabled>
                         <label id="matematicas-label" for="matematicas">Matemáticas:</label>
-                        <input name="matematicas" type="number" class="input-form2 matematicas" min="1" max="100" disabled>
+                        <input name="matematicas" type="number" class="input-form2 matematicas form-control" min="1" max="100" disabled>
                         <label id="algoritmos-label" for="algoritmos">Algoritmos:</label>
-                        <input name="algoritmos" type="number" class="input-form2 algoritmos" min="1" max="100" disabled>
+                        <input name="algoritmos" type="number" class="input-form2 algoritmos form-control" min="1" max="100" disabled>
                     </div>
                     <div class="divisionMaterias">                    
                         <label id="logica-label" for="logica">Lógica:</label>
-                        <input name="logica" type="number" class="input-form2 logica" min="1" max="100" disabled>
+                        <input name="logica" type="number" class="input-form2 logica form-control" min="1" max="100" disabled>
                         <label id="so-label" for="so">SO:</label>
-                        <input name="so" type="number" class="input-form2 so" min="1" max="100" disabled>
+                        <input name="so" type="number" class="input-form2 so form-control" min="1" max="100" disabled>
                         <label id="bd-label" for="bd">BD:</label>
-                        <input name="bd" type="number" class="input-form2 bd" min="1" max="100" disabled>
+                        <input name="bd" type="number" class="input-form2 bd form-control" min="1" max="100" disabled>
                     </div>
                 </section>
 
                 <div id="buttonContainer">
-                    <input class="submittButton" type="submit" value="Enviar" disabled>
+                    <input class="btn btn-primary btnEvaluar" type="submit" value="Enviar" disabled>
                 </div>
             </form>
         </div>
@@ -72,5 +76,15 @@
 
         include '../php/footer.php';
     ?>
+    <!-- Agregamos scripts para funciones de JS para menú desplegables, carrusel, etc. -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
 </html>

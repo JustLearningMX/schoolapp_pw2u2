@@ -13,13 +13,19 @@
   /* flex-wrap: wrap; */
 }
 
+.mainSection{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 /*Estilos al título del formulario*/
 .tituloForm {
   margin: 0;
   margin: 20px 30px;
   font-size: 2rem;
   font-weight: 700;
-  padding-top: 3px;
+  padding-top: 100px;
 }
 
 /* Tabla */
@@ -27,16 +33,16 @@
   width: 70%;
 }
 
-#tableContainer > table, th, td {
+/* #tableContainer > table, th, td {
   border: 2px solid #20232a;
   border-collapse: collapse;
 }
 
 #tableContainer > table{
   width: 60%;
-}
+} */
 
-th{
+/* th{
   background-color: #31373b;
   padding: 10px 0;
   color: #f7f7f7;
@@ -47,8 +53,8 @@ td {
   padding: 5px;
   text-align: center;
   color: #20232a;
-}
+} */
 
-.trDatos:hover{
+/* .trDatos:hover{
   opacity: .9;
-}
+} */

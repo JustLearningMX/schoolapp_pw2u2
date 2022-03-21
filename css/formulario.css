@@ -41,10 +41,12 @@
 /*Estilos al título del formulario*/
 .tituloForm {
   margin: 0;
+  padding: 0;
   /* margin: 40px 30px 30px 30px; */
   font-size: 2rem;
   font-weight: 700;
-  padding-top: 3px;
+  /* padding-top: 3px; */
+  /* background-color: #0a9640; */
 }
 
 /* Estilos a la actividad propia del formulario */
@@ -63,7 +65,7 @@
   flex-direction: column;
   /* margin-bottom: 100px; */
   width: 100%;
-  padding: 1rem;
+  padding: 0 1.2rem;
 }
 
 /*Estilos para los label*/
@@ -195,4 +197,23 @@ td {
   width: 100%;
   padding-left: 20px;
   padding-bottom: 10px;
+}
+
+#name-label{
+  padding: 0 3px;
+  margin: 0;
+}
+
+.form-control{
+  /* padding: 0; */
+  margin: 0;
+}
+
+.passw{
+  margin-top: 10px;
+}
+
+.btn{
+  margin: 5px 0;
+  width: 120px;
 }

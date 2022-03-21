@@ -1,27 +1,38 @@
 /* ESTILOS PARA EL HEADER */
-header {
+.header {
   background-color: #20232a;
-  /* background-color: transparent; */
-  display: flex; /*Flexbox para ordenar elementos*/
-  justify-content: space-around; /*Espacio alrededor horizontalmente*/
-  align-items: center; /*Se alinean verticalmente en el centro*/
+  /* background-color:transparent; */
+  /*display: flex; Flexbox para ordenar elementos
+  justify-content: space-around; Espacio alrededor horizontalmente
+  align-items: center; Se alinean verticalmente en el centro
 
-  /*Fijamos el menú*/
+  Fijamos el menú
   position: fixed;   
   width: 100%;
   height: 70px;
-  z-index: 7;
+  z-index: 7; */
+}
+
+.header > a {
+  text-decoration: none;
+}
+
+.nav-link {
+  color: #ffffff;
 }
 
 .empresaContainer {
   /*Orden al DIV que contiene el logo y nombre de la empresa*/
   display: flex;
+  /* background-color:aquamarine; */
+  width: 30%;
+  justify-content: flex-end;
 }
 
-img {
-  /*Estilo a logotipo*/
-  width: 50px;
-  height: auto;
+.logoContainer {
+  /*Orden al DIV que contiene el logo y nombre de la empresa*/
+  display: flex;
+  /* background-color: burlywood; */
 }
 
 .nomEmpresa {
@@ -37,16 +48,14 @@ img {
   color: #61dafb;
 }
 
-nav {
-  /*Estilos a barra de del menú*/
-  width: 40%;
-}
-
 ul {
   /*Estilos a listado del menú*/
   list-style: none;
   display: flex;
   justify-content: space-around;
+  /* background-color: #61dafb; */
+  width: 100%;
+  align-items: center;
 }
 
 .menuItems {
@@ -65,35 +74,49 @@ ul {
 
 /*MENÚ DESPLEGABLE "PRÉSTAMOS / ASESORES"*/
 
-.menuPrincipal li{
+.menuPrincipal li {
   position: relative;
   float: left;
 }
 
-.menuPrincipal li > a{
-  /* font-weight: 500; */
+.menuPrincipal li > a {
   color: #ffffff;
 }
 
-.subMenu1{
+.subMenu1 {
   position: absolute;
   display: none;
   flex-direction: column;
 }
 
-.subMenu1 li{
+.subMenu1 li {
   float: none;
   width: 110px;
   background-color: #be3144;
   padding: 5px;
 }
 
-.menuLink{
+.menuLink {
   cursor: pointer;
 }
 
 .subPrestamo:hover > ul,
 .subAsesor:hover > ul,
-.subDivisas:hover > ul{
+.subDivisas:hover > ul {
   display: flex;
+}
+
+/* Diseño para teléfonos */
+@media screen and (max-width: 1023px) {
+  .empresaContainer {
+    width: 80%;
+    justify-content: center;
+    /* background-color: #fff; */
+  }
+
+  .navbar-toggler-icon {
+    box-shadow: 0 0 2px 1px #f0f0f0;
+    border-radius: 10%;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 0.8)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
 }
