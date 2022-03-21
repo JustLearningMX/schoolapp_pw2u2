@@ -17,8 +17,8 @@
     <link rel="stylesheet" href="../css/formulario.css">
     <link rel="stylesheet" href="../css/footer.css">
 
-    <base href="/PW2_U2/">
-    <!-- <base href="https://safe-stream-39211.herokuapp.com/"> -->
+    <!-- <base href="/PW2_U2/"> -->
+    <base href="https://safe-stream-39211.herokuapp.com/">
     <script src="./js/controladorEvaluar.js"></script>
 </head>
 <body >  

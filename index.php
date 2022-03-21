@@ -30,8 +30,8 @@
     <!-- <link rel="stylesheet" href="./css/formulario.css"> -->
 
     <!-- Establecemos rutas relativas, ya sea para trabajar en Local o en Heroku -->
-    <base href="/PW2_U2/">
-    <!-- <base href="https://safe-stream-39211.herokuapp.com/"> -->
+    <!-- <base href="/PW2_U2/"> -->
+    <base href="https://safe-stream-39211.herokuapp.com/">
 </head>
 <!---->
 

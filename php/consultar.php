@@ -11,8 +11,8 @@
     <link rel="stylesheet" href="../css/tablaUsuarios.css">
     <link rel="stylesheet" href="../css/footer.css">
 
-    <base href="/PW2_U2/">
-    <!-- <base href="https://safe-stream-39211.herokuapp.com/"> -->
+    <!-- <base href="/PW2_U2/"> -->
+    <base href="https://safe-stream-39211.herokuapp.com/">
 </head>
 
 <body >

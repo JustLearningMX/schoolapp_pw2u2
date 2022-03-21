@@ -18,8 +18,8 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/formulario.css">
 
-    <base href="/PW2_U2/">
-    <!-- <base href="https://safe-stream-39211.herokuapp.com/"> -->
+    <!-- <base href="/PW2_U2/"> -->
+    <base href="https://safe-stream-39211.herokuapp.com/">
 </head>
 <body >  
 
