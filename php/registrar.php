@@ -16,6 +16,9 @@
     <link rel="stylesheet" href="../css/formulario.css">
     <link rel="stylesheet" href="../css/footer.css">
 
+    <!-- agregando recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     <!-- <base href="/PW2_U2/"> -->
     <base href="https://safe-stream-39211.herokuapp.com/">
 </head>
@@ -52,6 +55,8 @@
                 <div id="buttonContainer">
                     <input class="btn btn-primary" type="submit" value="Enviar"><!--  -->
                 </div>
+
+                <div class="g-recaptcha" data-sitekey="6Le7tAAfAAAAAGDjy1rK20TgbNnu_3BUE-XUYagr"></div>
             </form>
         </div>
         <div class="registrarImg">

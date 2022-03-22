@@ -29,6 +29,9 @@
     <link rel="stylesheet" href="./css/main.css">    
     <!-- <link rel="stylesheet" href="./css/formulario.css"> -->
 
+    <!-- agregando recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
     <!-- Establecemos rutas relativas, ya sea para trabajar en Local o en Heroku -->
     <!-- <base href="/PW2_U2/"> -->
     <base href="https://safe-stream-39211.herokuapp.com/">
